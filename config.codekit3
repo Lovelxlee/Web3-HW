@@ -211,6 +211,56 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/Week 2\/deploy\/img\/activities\/biking.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/activities\/biking.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/activities\/bison.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/activities\/bison.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/activities\/camping.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/activities\/camping.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/activities\/fishing.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/activities\/fishing.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/activities\/lodge.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/activities\/lodge.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Week 2\/deploy\/img\/global\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -256,6 +306,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Week 2\/deploy\/img\/icons\/arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/icons\/call.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/icons\/call.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/icons\/nav.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/icons\/nav.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -310,6 +380,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/Week 2\/dev\/content\/activities.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/Week 2\/dev\/content\/activities.html",
+      "oF" : 0
+    },
     "\/Week 2\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -346,7 +424,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Week 2\/dev\/global\/footer.html",
       "oF" : 0
     },
