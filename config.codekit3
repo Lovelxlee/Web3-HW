@@ -497,8 +497,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Week 2\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/Week 2\/deploy\/index.html",
+      "oF" : 2
     },
     "\/Week 2\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -506,8 +506,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/Week 2\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/Week 2\/deploy\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -670,8 +670,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/Week 2\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/Week 2\/deploy\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
