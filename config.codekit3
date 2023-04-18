@@ -231,6 +231,26 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Week 2\/deploy\/img\/heroes\/waterfall.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/heroes\/waterfall.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/heroes\/wolf.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/heroes\/wolf.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Week 2\/deploy\/img\/icons\/arrow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -241,11 +261,31 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Week 2\/deploy\/img\/icons\/questions.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/icons\/questions.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Week 2\/deploy\/img\/icons\/search.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Week 2\/deploy\/img\/icons\/search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Week 2\/deploy\/img\/icons\/trees.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Week 2\/deploy\/img\/icons\/trees.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -276,6 +316,22 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/Week 2\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/Week 2\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/Week 2\/dev\/content\/hero2.html",
+      "oF" : 0
+    },
+    "\/Week 2\/dev\/content\/planning.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/Week 2\/dev\/content\/planning.html",
       "oF" : 0
     },
     "\/Week 2\/dev\/content\/search.kit" : {
