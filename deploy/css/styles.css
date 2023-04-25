@@ -425,11 +425,14 @@ footer > div {
 /* =============
     Activities
 ============= */
-#activities {
+#activities ul li img {
+  width: 100%;
+}
+#activities ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". activities .";
 }
-#activities > div {
-  grid-area: activities;
+#activities ul li section > div {
+  grid-area: activities-content;
 }
