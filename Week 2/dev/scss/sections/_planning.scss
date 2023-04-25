@@ -7,5 +7,8 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". planning .";
     
-
+    >div{
+        grid-area: planning;
+    }
+        
 }

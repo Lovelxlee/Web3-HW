@@ -393,7 +393,6 @@ footer > div {
 }
 #hero > div {
   grid-area: hero;
-  border: 1px solid blue;
 }
 
 /*-------Hero2------*/
@@ -404,6 +403,9 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". planning .";
+}
+#planning > div {
+  grid-area: planning;
 }
 
 /* =============
@@ -416,7 +418,6 @@ footer > div {
 }
 #activities > div {
   grid-area: activities;
-  border: 1px solid red;
 }
 
 /* =============
