@@ -14,7 +14,8 @@
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". activities .";
                 >div{
-                    grid-area: activities-content;
+                    grid-area: activities;
+                    //background-color: blue;
                 }
             }
         }
