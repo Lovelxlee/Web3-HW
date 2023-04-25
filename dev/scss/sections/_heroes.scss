@@ -2,19 +2,28 @@
     Heroes
 ============= */
 #hero{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
-    
-    >div{
-        grid-area: hero;
+    aside{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". hero .";
+        >div{
+            grid-area: hero;
+        }
     }
-        
 }
 
 
 
-/*-------Hero2------*/
-#hero2{
-
+/*-------hero-sub------*/
+#hero-sub{
+.hero-sub-content{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-sub .";
+    >div{
+            grid-area: hero-sub;
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
     }
+}

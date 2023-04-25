@@ -400,26 +400,25 @@ footer > div {
 /* =============
     Heroes
 ============= */
-#hero {
+#hero aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-#hero > div {
+#hero aside > div {
   grid-area: hero;
 }
 
-/*-------Hero2------*/
-/* =============
-    Planning
-============= */
-#planning {
+/*-------hero-sub------*/
+#hero-sub .hero-sub-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". planning .";
+  grid-template-areas: ". hero-sub .";
 }
-#planning > div {
-  grid-area: planning;
+#hero-sub .hero-sub-content > div {
+  grid-area: hero-sub;
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
@@ -432,16 +431,4 @@ footer > div {
 }
 #activities > div {
   grid-area: activities;
-}
-
-/* =============
-    Search
-============= */
-#search {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". about .";
-}
-#search > div {
-  grid-area: search;
 }
