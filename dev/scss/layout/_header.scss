@@ -2,11 +2,34 @@
     Header
 ============= */
 header{
- display: grid; 
- grid-template-columns: 16px auto 16px;
- grid-template-areas: ". header .";
+    #logo-nav{
+        display: grid; 
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". logo-nav .";
+        >div{
+        grid-area: logo-nav;
+            img{
+            
+            }
+        }   
+    }
+#search{
+    display: grid; 
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
+    >div{
+    grid-area: logo-nav;
+        form{
+            input{
 
- >div{
-grid-area: header;
- }
+             }
+                button{
+                    img{
+
+                    }
+
+                }
+            }
+        }
+    }
 }

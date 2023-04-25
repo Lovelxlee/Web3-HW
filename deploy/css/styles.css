@@ -327,6 +327,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
 .large-images {
   width: 100%;
 }
@@ -361,15 +369,22 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  grid-template-areas: ". logo-nav .";
 }
-header > div {
-  grid-area: header;
+header #logo-nav > div {
+  grid-area: logo-nav;
 }
-
+header #search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #search > div {
+  grid-area: logo-nav;
+}
 /* =============
     Footer
 ============= */
