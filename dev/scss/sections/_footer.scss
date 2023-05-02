@@ -14,6 +14,14 @@
             "f1 f2"
             "f1 f3";
             }
+
+            @include lg{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "f1 f2 f3";
+                }
+
             #f1{
                 grid-area: f1;
             }

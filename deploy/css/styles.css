@@ -545,6 +545,13 @@ footer > div {
     grid-template-areas: "f1 f2" "f1 f3";
   }
 }
+@media (min-width: 1024px) {
+  #footer > div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
 #footer > div ul #f1 {
   grid-area: f1;
 }
