@@ -3,20 +3,56 @@
 ============= */
 
 #activities{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". activities .";
+>div{
+    grid-area: activities;
+ul{
 
-    ul{
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "g1 g1 g2 g2"
+        "g3 g3 g4 g4"
+        ". g5 g5 .";
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "g1 g1 g2 g2 g3 g3"
+            ". g4 g4 g5 g5 .";
+        }
+}
+#g1{
+    grid-area: g1;
+}
+#g2{
+    grid-area: g2;
+}
+#g3{
+    grid-area: g3;
+}
+#g4{
+    grid-area: g4;
+}
+#g5{
+    grid-area: g5;
+}
+
+
         li{
+            list-style: none;
             img{
                     width: 100%;
             }
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". activities .";
-                >div{
-                    grid-area: activities;
-                    //background-color: blue;
-                }
+
+
+
+
+                
             }
         }
     }  

@@ -443,16 +443,48 @@ footer > div {
 /* =============
     Activities
 ============= */
-#activities ul li img {
-  width: 100%;
-}
-#activities ul li section {
+#activities {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". activities .";
 }
-#activities ul li section > div {
+#activities > div {
   grid-area: activities;
+}
+@media (min-width: 768px) {
+  #activities > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4" ". g5 g5 .";
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #activities > div ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "g1 g1 g2 g2 g3 g3" ". g4 g4 g5 g5 .";
+  }
+}
+#activities > div ul #g1 {
+  grid-area: g1;
+}
+#activities > div ul #g2 {
+  grid-area: g2;
+}
+#activities > div ul #g3 {
+  grid-area: g3;
+}
+#activities > div ul #g4 {
+  grid-area: g4;
+}
+#activities > div ul #g5 {
+  grid-area: g5;
+}
+#activities > div ul li {
+  list-style: none;
+}
+#activities > div ul li img {
+  width: 100%;
 }
 
 #gallery {
