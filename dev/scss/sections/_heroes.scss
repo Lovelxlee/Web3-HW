@@ -10,6 +10,15 @@
     
         >div{
             grid-area: hero;
+
+            @include sm{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "h1"
+                "h2";        
+
+            }
             @include md{
                 display: grid;
                 grid-template-columns: 50% auto;

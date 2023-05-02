@@ -1,16 +1,50 @@
 #gallery{
     display: grid;
-
-
-@include md{
- display: grid;
-                grid-template-columns: 50% auto;
-
-}
 >div{
-grid-area: sections;
-display: grid;
-grid-template-columns: 50% auto;
+grid-area: gallery;
+
+
+ul{
+    @include sm{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        //"i3";        
+    
+    }
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "i1 i1 i2"
+        "i1 i1 i3";
+    }
+    
+    #i1{
+     grid-area: i1;   
+    }
+    
+    #i2{
+        grid-area: i2;   
+       }
+    
+    #i3{
+        grid-area: i3;   
+       }
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+   
+
 
 }
 

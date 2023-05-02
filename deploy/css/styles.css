@@ -408,6 +408,13 @@ footer > div {
 #hero aside > div {
   grid-area: hero;
 }
+@media (min-width: 576px) {
+  #hero aside > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "h1" "h2";
+  }
+}
 @media (min-width: 768px) {
   #hero aside > div {
     display: grid;
@@ -490,14 +497,29 @@ footer > div {
 #gallery {
   display: grid;
 }
-@media (min-width: 768px) {
-  #gallery {
+#gallery > div {
+  grid-area: gallery;
+}
+@media (min-width: 576px) {
+  #gallery > div ul {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "i1" "i2";
   }
 }
-#gallery > div {
-  grid-area: sections;
-  display: grid;
-  grid-template-columns: 50% auto;
+@media (min-width: 768px) {
+  #gallery > div ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "i1 i1 i2" "i1 i1 i3";
+  }
+}
+#gallery > div ul #i1 {
+  grid-area: i1;
+}
+#gallery > div ul #i2 {
+  grid-area: i2;
+}
+#gallery > div ul #i3 {
+  grid-area: i3;
 }
