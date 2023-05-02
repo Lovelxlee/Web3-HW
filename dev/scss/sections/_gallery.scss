@@ -1,12 +1,9 @@
 #gallery{
     display: grid;
     
+    
 >div{
 grid-area: gallery;
-grid-template-columns: 100%;
-        grid-template-areas: 
-        "i1"
-        "i2";  
 
 
 ul{
@@ -18,6 +15,22 @@ ul{
         "i2";        
     
     }
+
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        "i1 i2";        
+    
+    }
+    @include lg{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        "i1 i2";        
+    
+    }
+
     @include xl{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
