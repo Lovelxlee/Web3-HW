@@ -408,6 +408,25 @@ footer > div {
 #hero aside > div {
   grid-area: hero;
 }
+@media (min-width: 768px) {
+  #hero aside > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "h1 h2";
+  }
+}
+
+@media (min-width: 768px) {
+  #h1 {
+    grid-area: h1;
+  }
+}
+
+@media (min-width: 768px) {
+  #h2 {
+    grid-area: h2;
+  }
+}
 
 /*-------hero-sub------*/
 #hero-sub .hero-sub-content {
@@ -434,4 +453,19 @@ footer > div {
 }
 #activities ul li section > div {
   grid-area: activities;
+}
+
+#gallery {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#gallery > div {
+  grid-area: sections;
+  display: grid;
+  grid-template-columns: 50% auto;
 }

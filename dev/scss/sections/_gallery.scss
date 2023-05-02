@@ -1,0 +1,17 @@
+#gallery{
+    display: grid;
+
+
+@include md{
+ display: grid;
+                grid-template-columns: 50% auto;
+
+}
+>div{
+grid-area: sections;
+display: grid;
+grid-template-columns: 50% auto;
+
+}
+
+}

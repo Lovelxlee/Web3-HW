@@ -6,13 +6,31 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero .";
+
+    
         >div{
             grid-area: hero;
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: 
+                "h1 h2";
+            }
         }
     }
 }
 
+#h1{
+    @include md{
+        grid-area: h1;
+    }
+}
 
+#h2{
+    @include md{
+        grid-area: h2;
+    }
+}
 
 /*-------hero-sub------*/
 #hero-sub{
