@@ -2,7 +2,6 @@
     Heroes
 ============= */
 #hero{
-    aside{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero .";
@@ -10,48 +9,54 @@
     
         >div{
             grid-area: hero;
+ul{
 
-            @include sm{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-areas: 
-                "h1"
-                "h2";        
-
-            }
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: 
-                "h1 h2";
-            }
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        "h1 h2";
+}
+       
+#h1{
+    grid-area: h1;
+}
+#h2{
+    grid-area: h2;
+}   
         }
     }
 }
 
-#h1{
-    @include md{
-        grid-area: h1;
-    }
-}
 
-#h2{
-    @include md{
-        grid-area: h2;
-    }
-}
 
 /*-------hero-sub------*/
 #hero-sub{
-.hero-sub-content{
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero-sub .";
     >div{
             grid-area: hero-sub;
-            display: grid;
-            grid-template-columns: 50% auto;
-            //background: red;
+
+            ul{
+
+                @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: 
+                    "h3 h4";
+    
+    
+            }
+            #h3{
+                grid-area: h3;
+            }
+            #h4{
+                grid-area: h4;
         }
+
+      
+        }   
     }
 }

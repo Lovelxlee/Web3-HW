@@ -1,7 +1,12 @@
 #gallery{
     display: grid;
+    
 >div{
 grid-area: gallery;
+grid-template-columns: 100%;
+        grid-template-areas: 
+        "i1"
+        "i2";  
 
 
 ul{
@@ -10,11 +15,10 @@ ul{
         grid-template-columns: 100%;
         grid-template-areas: 
         "i1"
-        "i2"
-        //"i3";        
+        "i2";        
     
     }
-    @include md{
+    @include xl{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
@@ -35,7 +39,12 @@ ul{
        }
     
     
-    
+       li{
+        list-style: none;
+        img{
+                width: 100%;
+        }
+}
     
     
     }

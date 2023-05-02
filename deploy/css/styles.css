@@ -400,51 +400,49 @@ footer > div {
 /* =============
     Heroes
 ============= */
-#hero aside {
+#hero {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-#hero aside > div {
+#hero > div {
   grid-area: hero;
 }
-@media (min-width: 576px) {
-  #hero aside > div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "h1" "h2";
-  }
-}
 @media (min-width: 768px) {
-  #hero aside > div {
+  #hero > div ul {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "h1 h2";
   }
 }
-
-@media (min-width: 768px) {
-  #h1 {
-    grid-area: h1;
-  }
+#hero > div ul #h1 {
+  grid-area: h1;
 }
-
-@media (min-width: 768px) {
-  #h2 {
-    grid-area: h2;
-  }
+#hero > div ul #h2 {
+  grid-area: h2;
 }
 
 /*-------hero-sub------*/
-#hero-sub .hero-sub-content {
+#hero-sub {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
 }
-#hero-sub .hero-sub-content > div {
+#hero-sub > div {
   grid-area: hero-sub;
-  display: grid;
-  grid-template-columns: 50% auto;
+}
+@media (min-width: 768px) {
+  #hero-sub > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "h3 h4";
+  }
+}
+#hero-sub > div ul #h3 {
+  grid-area: h3;
+}
+#hero-sub > div ul #h4 {
+  grid-area: h4;
 }
 
 /* =============
@@ -499,6 +497,8 @@ footer > div {
 }
 #gallery > div {
   grid-area: gallery;
+  grid-template-columns: 100%;
+  grid-template-areas: "i1" "i2";
 }
 @media (min-width: 576px) {
   #gallery > div ul {
@@ -507,7 +507,7 @@ footer > div {
     grid-template-areas: "i1" "i2";
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #gallery > div ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -522,4 +522,35 @@ footer > div {
 }
 #gallery > div ul #i3 {
   grid-area: i3;
+}
+#gallery > div ul li {
+  list-style: none;
+}
+#gallery > div ul li img {
+  width: 100%;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+@media (min-width: 768px) {
+  #footer > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+#footer > div ul #f1 {
+  grid-area: f1;
+}
+#footer > div ul #f2 {
+  grid-area: f2;
+}
+#footer > div ul #f3 {
+  grid-area: f3;
 }
