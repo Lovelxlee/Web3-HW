@@ -6,6 +6,7 @@ header{
         display: grid; 
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
+        background-color: var(--green);
         >div{
         grid-area: logo-nav;
             img{
@@ -24,6 +25,8 @@ header{
 
              }
                 button{
+                    background-color: var(--orange);
+                    color: white;
                     img{
 
                     }

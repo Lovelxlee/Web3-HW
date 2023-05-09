@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --green: #2D401E;
+  --orange: #FF9900;
+  --tan: #FFCC9C;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -382,6 +385,7 @@ header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
+  background-color: var(--green);
 }
 header #logo-nav > div {
   grid-area: logo-nav;
@@ -393,6 +397,10 @@ header #search {
 }
 header #search > div {
   grid-area: logo-nav;
+}
+header #search > div form button {
+  background-color: var(--orange);
+  color: white;
 }
 /* =============
     Footer
@@ -606,6 +614,7 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: var(--green);
 }
 @media (min-width: 1440px) {
   #footer {
