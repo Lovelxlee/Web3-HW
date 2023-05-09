@@ -411,7 +411,7 @@ footer > div {
 @media (min-width: 768px) {
   #hero > div ul {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% auto;
     grid-template-areas: "h1 h2";
   }
 }
