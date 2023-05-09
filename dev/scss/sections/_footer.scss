@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
+      @include xxl{
+            grid-template-columns: auto 1200px auto;
+            }
 >div{
     grid-area: footer;
 
@@ -9,7 +13,7 @@
 
         @include md{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 50% auto;
             grid-template-areas: 
             "f1 f2"
             "f1 f3";
