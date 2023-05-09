@@ -25,12 +25,20 @@
 
 #hero-left{
     background: fuchsia;
+    @include xxl{
+        grid-template-columns: 20% auto 16px; 
+}
 }
 
 
 
 #hero-right{
     background: purple;
+    @include xxl{
+
+        grid-template-columns: 16px auto 20%; 
+    }
+        
         }
     }
 }
@@ -44,7 +52,7 @@
             grid-template-areas: ". hero-sub .";
 
         }
-        @include xl{
+        @include xxl{
             grid-template-columns: auto 1200px auto;
         }
         >div{

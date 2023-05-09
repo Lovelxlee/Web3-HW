@@ -422,8 +422,18 @@ footer > div {
 #hero section #hero-left {
   background: fuchsia;
 }
+@media (min-width: 1440px) {
+  #hero section #hero-left {
+    grid-template-columns: 20% auto 16px;
+  }
+}
 #hero section #hero-right {
   background: purple;
+}
+@media (min-width: 1440px) {
+  #hero section #hero-right {
+    grid-template-columns: 16px auto 20%;
+  }
 }
 
 /*-------hero-sub------*/
@@ -434,7 +444,7 @@ footer > div {
     grid-template-areas: ". hero-sub .";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #hero-sub {
     grid-template-columns: auto 1200px auto;
   }
