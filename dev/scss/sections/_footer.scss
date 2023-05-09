@@ -12,6 +12,7 @@
             }
 >div{
     grid-area: footer;
+    margin: 0px 9px 16px 0px;
    
     ul{
         @include md{
