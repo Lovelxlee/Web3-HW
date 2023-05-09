@@ -3,11 +3,17 @@
 ============= */
 
 #activities{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". activities .";
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". activities .";
+    }
+
 >div{
-    grid-area: activities;
+    @include md{
+grid-area: activities;
+
+    }
 ul{
 
     @include md{
@@ -17,7 +23,53 @@ ul{
         "g1 g1 g2 g2"
         "g3 g3 g4 g4"
         ". g5 g5 .";
+        gap: 16px;
 
+    }
+    li{
+
+    img{
+
+        width: 100%;
+    }
+    section{
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". activities .";
+background: goldenrod;
+>div{
+    grid-area: activities;
+}
+
+
+
+    }
+    }
+    #g1{
+        @include md{
+            grid-area: g1;
+        }
+    }
+    #g2{
+        @include md{
+        grid-area: g2;
+        }
+    }
+    #g3{
+        @include md{
+        grid-area: g3;
+        }
+    }
+    #g4{
+        @include md{
+        grid-area: g4;
+        }
+    }
+    #g5{
+        @include md{
+        grid-area: g5;
+        }
+    }
         @include lg{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -26,21 +78,7 @@ ul{
             ". g4 g4 g5 g5 .";
         }
 }
-#g1{
-    grid-area: g1;
-}
-#g2{
-    grid-area: g2;
-}
-#g3{
-    grid-area: g3;
-}
-#g4{
-    grid-area: g4;
-}
-#g5{
-    grid-area: g5;
-}
+
 
 
         li{
@@ -56,4 +94,3 @@ ul{
             }
         }
     }  
-}
