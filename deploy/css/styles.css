@@ -638,7 +638,6 @@ footer > div {
 }
 #footer > div {
   grid-area: footer;
-  margin: 0px 9px 16px 0px;
 }
 @media (min-width: 768px) {
   #footer > div ul {
@@ -666,4 +665,18 @@ footer > div {
 }
 #footer > div ul #f3 {
   grid-area: f3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "s1 s2 s3 s4";
+}
+#footer > div ul s1 {
+  grid-area: s1;
+}
+#footer > div ul s2 {
+  grid-area: s2;
+}
+#footer > div ul s3 {
+  grid-area: s3;
+}
+#footer > div ul s4 {
+  grid-area: s4;
 }

@@ -12,7 +12,7 @@
             }
 >div{
     grid-area: footer;
-    margin: 0px 9px 16px 0px;
+
    
     ul{
         @include md{
@@ -34,6 +34,9 @@
                     background-color: var(--orange);
                     color: white;
                 }
+
+
+                
             #f1{
                 grid-area: f1;
             }
@@ -42,6 +45,22 @@
             }
             #f3{
                 grid-area: f3;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "s1 s2 s3 s4";
+            }
+
+            s1{
+                grid-area: s1;
+            }
+            s2{
+                grid-area: s2;
+            }
+            s3{
+                grid-area: s3;
+            }
+            s4{
+                grid-area: s4;
             }
 }
 }
