@@ -386,7 +386,7 @@ header #logo-nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
   background-color: var(--green);
-  padding: 8px;
+  padding: 16px 0;
 }
 header #logo-nav > div {
   grid-area: logo-nav;
@@ -396,12 +396,37 @@ header #search {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
+@media (min-width: 768px) {
+  header #search {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  header #search {
+    grid-template-columns: auto 1200px auto;
+    padding: 30px 0;
+  }
+}
 header #search > div {
   grid-area: logo-nav;
 }
+header #search > div form {
+  display: flex;
+}
+header #search > div form input {
+  width: 100%;
+  border: 1px solid black;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  border-radius: 0;
+  background-color: transparent;
+  margin-right: 8px;
+}
 header #search > div form button {
   background-color: var(--orange);
-  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
 /* =============
     Footer
