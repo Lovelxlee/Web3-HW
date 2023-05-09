@@ -6,7 +6,7 @@ footer{
     display: grid; 
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-   
+    color: var(--snow);
     >div{
    grid-area: footer;
     }

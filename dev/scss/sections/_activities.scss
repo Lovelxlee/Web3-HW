@@ -15,9 +15,13 @@
 >div{
     @include md{
 grid-area: activities;
+background-color: var(--snow);
 
     }
 ul{
+    padding: 0px 0px 16px 0px;
+  
+
 
     @include md{
         display: grid;
@@ -45,7 +49,6 @@ ul{
 display: grid;
 grid-template-columns: 16px auto 16px;
 grid-template-areas: ". activities .";
-background: goldenrod;
 >div{
     grid-area: activities;
 }
