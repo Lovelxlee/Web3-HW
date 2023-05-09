@@ -400,49 +400,42 @@ footer > div {
 /* =============
     Heroes
 ============= */
-#hero {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
-}
-#hero > div {
-  grid-area: hero;
-}
 @media (min-width: 768px) {
-  #hero > div ul {
+  #hero section {
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-areas: "h1 h2";
   }
 }
-#hero > div ul #h1 {
-  grid-area: h1;
+@media (min-width: 1024px) {
+  #hero section {
+    grid-template-columns: 50% auto;
+  }
 }
-#hero > div ul #h2 {
-  grid-area: h2;
+#hero section aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-aside .";
+}
+#hero section aside > div {
+  grid-area: hero-aside;
+}
+#hero section #hero-left {
+  background: fuchsia;
+}
+#hero section #hero-right {
+  background: purple;
 }
 
 /*-------hero-sub------*/
-#hero-sub {
+#hero-sub .hero-sub-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
 }
-#hero-sub > div {
+#hero-sub .hero-sub-content > div {
   grid-area: hero-sub;
-}
-@media (min-width: 768px) {
-  #hero-sub > div ul {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "h3 h4";
-  }
-}
-#hero-sub > div ul #h3 {
-  grid-area: h3;
-}
-#hero-sub > div ul #h4 {
-  grid-area: h4;
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
