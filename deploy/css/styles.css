@@ -437,7 +437,7 @@ footer > div {
   grid-area: hero-aside;
 }
 #hero section #hero-left {
-  background: fuchsia;
+  background: var(--tan);
 }
 @media (min-width: 1440px) {
   #hero section #hero-left {
@@ -445,7 +445,7 @@ footer > div {
   }
 }
 #hero section #hero-right {
-  background: purple;
+  background: var(--orange);
 }
 @media (min-width: 1440px) {
   #hero section #hero-right {
@@ -479,10 +479,10 @@ footer > div {
   grid-template-columns: 50% auto;
 }
 #hero-sub > div .hero-sub-content #hero-sub-left {
-  background-color: brown;
+  background-color: var(--green);
 }
 #hero-sub > div .hero-sub-content #hero-sub-right {
-  background-color: salmon;
+  background-color: var(--green);
 }
 
 /* =============

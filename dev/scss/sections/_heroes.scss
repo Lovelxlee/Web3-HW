@@ -24,7 +24,7 @@
         }
 
 #hero-left{
-    background: fuchsia;
+    background:var(--tan);
     @include xxl{
         grid-template-columns: 20% auto 16px; 
 }
@@ -33,7 +33,7 @@
 
 
 #hero-right{
-    background: purple;
+    background:var(--orange);
     @include xxl{
 
         grid-template-columns: 16px auto 20%; 
@@ -71,10 +71,10 @@
         
             }
         #hero-sub-left{
-            background-color: brown;
+            background-color: var(--green);
         }
         #hero-sub-right{
-            background-color: salmon;
+            background-color:var(--green);
         }
 
         
