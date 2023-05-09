@@ -1,62 +1,55 @@
 #gallery{
-    display: grid;
-    
-    
->div{
-grid-area: gallery;
-
-
-ul{
-    @include sm{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "i1"
-        "i2";        
-    
-    }
-
-    @include md{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: 
-        "i1 i2";        
-    
-    }
     @include lg{
         display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". gallery .";
+}
+
+@include xxl{
+    grid-template-columns: auto 1440px auto;
+
+}
+
+ul{
+    display: grid;
+    
+
+    @include md{
         grid-template-columns: 50% auto;
-        grid-template-areas: 
-        "i1 i2";        
+    }
+
+    @include lg{
+     
+        grid-area: gallery;
     
     }
 
-    @include xl{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "i1 i1 i2"
-        "i1 i1 i3";
-    }
-    
+    @include xxl{
+        grid-template-areas:
+        "i1 i2"
+        "i1 i3";
+    }    
+
     #i1{
-     grid-area: i1;   
+@include xxl{
+grid-area: i1;
+}
     }
-    
+
+
     #i2{
-        grid-area: i2;   
-       }
-    
-    #i3{
-        grid-area: i3;   
-       }
-    
-    
-       li{
-        list-style: none;
-        img{
-                width: 100%;
+        @include xxl{
+        grid-area: i2;
         }
+            }
+
+
+            #i{
+                @include xxl{
+                grid-area: i3;
+                }
+                    }
+       
 }
     
     
@@ -68,6 +61,5 @@ ul{
    
 
 
-}
 
-}
+

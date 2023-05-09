@@ -10,7 +10,13 @@ list-style-type: none;
 }
 }
 
+.show-xlarge{
+display: none;
+@include xl{
+    display:block;
+}
 
+}
 
 .large-images{
     width: 100%;
