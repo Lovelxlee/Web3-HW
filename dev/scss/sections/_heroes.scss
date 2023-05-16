@@ -3,6 +3,108 @@
 ============= */
 #hero{
     section{
+
+        @include sm{
+            h1{
+                font-weight: 700px;
+                font-size: rem-calc(18px);
+                line-height: 20px;
+                margin-bottom: 4px;
+                
+                        }
+                        h3{
+                            font-weight: 700px;
+                            font-size: rem-calc(14px);
+                            line-height: 20px;
+                
+                            
+                                    }
+                                    p{
+                                        font-weight: 400px;
+                                        font-size: rem-calc(16px);
+                                        line-height: 20px;
+                                        margin-bottom: 4px;
+                                        
+                
+                                    }
+
+        }
+        @include md{
+            h1{
+                font-weight: 700px;
+                font-size: rem-calc(18px);
+                line-height: 20px;
+                margin-bottom: 4px;
+                
+                        }
+                        h3{
+                            font-weight: 700px;
+                            font-size: rem-calc(14px);
+                            line-height: 20px;
+                
+                            
+                                    }
+                                    p{
+                                        font-weight: 400px;
+                                        font-size: rem-calc(16px);
+                                        line-height: 20px;
+                                        margin-bottom: 4px;
+                                        
+                
+                                    }
+
+        }
+        @include lg{
+            h1{
+                font-weight: 700px;
+                font-size: rem-calc(25px);
+                line-height: 20px;
+                margin-bottom: 4px;
+                
+                        }
+                        h3{
+                            font-weight: 700px;
+                            font-size: rem-calc(16px);
+                            line-height: 20px;
+                
+                            
+                                    }
+                                    p{
+                                        font-weight: 400px;
+                                        font-size: rem-calc(16px);
+                                        line-height: 20px;
+                                        margin-bottom: 4px;
+                                        
+                
+                                    }
+
+        }
+        @include xl{
+            h1{
+                font-weight: 700px;
+                font-size: 25px;
+                line-height: 20px;
+                margin-bottom: 4px;
+                
+                        }
+                        h3{
+                            font-weight: 700px;
+                            font-size: 16px;
+                            line-height: 20px;
+                
+                            
+                                    }
+                                    p{
+                                        font-weight: 500px;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        margin-bottom: 4px;
+                                        
+                
+                                    }
+
+        }
+   
         a{
 
             color: var(--snow);
