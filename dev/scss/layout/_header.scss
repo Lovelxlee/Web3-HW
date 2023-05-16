@@ -7,7 +7,9 @@ header{
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
         background-color: var(--green);
-        padding: 16px 0;
+        color: var(--black);
+        padding: 16px 0 24px;
+
         >div{
         grid-area: logo-nav;
             img{

@@ -17,6 +17,7 @@ html {
   --orange: #FF9900;
   --tan: #FFCC9C;
   --snow: #F8F9FA;
+  --grey: #2A3036;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -342,7 +343,7 @@ ul li {
 .show-xlarge {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .show-xlarge {
     display: block;
   }
@@ -355,6 +356,11 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -387,7 +393,8 @@ header #logo-nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
   background-color: var(--green);
-  padding: 16px 0;
+  color: var(--black);
+  padding: 16px 0 24px;
 }
 header #logo-nav > div {
   grid-area: logo-nav;
@@ -459,9 +466,13 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-aside .";
+  color: var(grey);
+  padding: 16px 0;
 }
 #hero section aside > div {
   grid-area: hero-aside;
+  display: flex;
+  align-items: center;
 }
 #hero section #hero-left {
   background: var(--tan);
@@ -504,6 +515,7 @@ footer > div {
   grid-area: hero-sub;
   display: grid;
   grid-template-columns: 50% auto;
+  color: var(snow);
 }
 #hero-sub > div .hero-sub-content #hero-sub-left {
   background-color: var(--green);
@@ -696,4 +708,9 @@ footer > div {
 }
 #footer > div ul s4 {
   grid-area: s4;
+}
+
+img {
+  font-size: 0;
+  display: block;
 }

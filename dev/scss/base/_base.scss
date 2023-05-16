@@ -12,7 +12,7 @@ list-style-type: none;
 
 .show-xlarge{
 display: none;
-@include xl{
+@include xxl{
     display:block;
 }
 
