@@ -24,8 +24,7 @@
                                         font-size: rem-calc(16px);
                                         line-height: 20px;
                                         margin-bottom: 4px;
-                                        
-                
+                                    
                                     }
 
         }
@@ -160,17 +159,64 @@
 /*-------hero-sub------*/
 #hero-sub{
     color:snow;
+    h1{
+        font-weight: 400px;
+        font-size: rem-calc(22px);
+        line-height: 48px;
+        margin-bottom: 16px;
+        
+                }
+    @include sm{
+        h1{
+            font-weight: 400px;
+            font-size: rem-calc(22px);
+            line-height: 48px;
+            margin-bottom: 16px;
+            
+                    }
+            
+   
+
+    }
         @include md{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-sub .";
+            h1{
+                font-weight: 400px;
+                font-size: rem-calc(29px);
+                line-height: 48px;
+                margin-bottom: 16px;
+                
+                        }
+                
+       
 
+        }
+        @include lg{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero-sub .";
+            h1{
+                font-weight: 300px;
+                font-size: rem-calc(30px);
+                line-height: 48px;
+                margin-bottom: 16px;
+                
+                        }
+                
        
 
         }
         @include xxl{
             grid-template-columns: auto 1200px auto;
-
+            h1{
+                font-weight: 400px;
+                font-size: rem-calc(31px);
+                line-height: 48px;
+                margin-bottom: 16px;
+                
+                        }
           
         }
         >div{

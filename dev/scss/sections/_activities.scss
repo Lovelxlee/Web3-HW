@@ -3,11 +3,41 @@
 ============= */
 
 #activities{
+
+    h2{
+        font-weight: 700px;
+        font-size: rem-calc(27px);
+    }
+p{
+    font-weight: 300px;
+    font-size: rem-calc(16px); 
+}
+h1{
+    font-weight: 400px;
+    font-size: rem-calc(20px);
+
+}
+    
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". activities .";
+        h1{
+            font-weight: 400px;
+            font-size: rem-calc(28px);
+        
+        }
     }
+
+    @include lg{
+h1{
+    font-weight: 300px;
+    font-size: rem-calc(37px);
+
+}
+
+
+}
     @include xxl{
         grid-template-columns: auto 1200px auto;
     }

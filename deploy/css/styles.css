@@ -634,16 +634,55 @@ footer > div {
 #hero-sub {
   color: snow;
 }
+#hero-sub h1 {
+  font-weight: 400px;
+  font-size: 1.375rem;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+@media (min-width: 576px) {
+  #hero-sub h1 {
+    font-weight: 400px;
+    font-size: 1.375rem;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+}
 @media (min-width: 768px) {
   #hero-sub {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero-sub .";
   }
+  #hero-sub h1 {
+    font-weight: 400px;
+    font-size: 1.8125rem;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-sub {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-sub .";
+  }
+  #hero-sub h1 {
+    font-weight: 300px;
+    font-size: 1.875rem;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
 }
 @media (min-width: 1440px) {
   #hero-sub {
     grid-template-columns: auto 1200px auto;
+  }
+  #hero-sub h1 {
+    font-weight: 400px;
+    font-size: 1.9375rem;
+    line-height: 48px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -668,11 +707,33 @@ footer > div {
 /* =============
     Activities
 ============= */
+#activities h2 {
+  font-weight: 700px;
+  font-size: 1.6875rem;
+}
+#activities p {
+  font-weight: 300px;
+  font-size: 1rem;
+}
+#activities h1 {
+  font-weight: 400px;
+  font-size: 1.25rem;
+}
 @media (min-width: 768px) {
   #activities {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". activities .";
+  }
+  #activities h1 {
+    font-weight: 400px;
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  #activities h1 {
+    font-weight: 300px;
+    font-size: 2.3125rem;
   }
 }
 @media (min-width: 1440px) {
@@ -804,6 +865,14 @@ footer > div {
   background-color: var(--green);
   color: var(--snow);
   padding: 16px;
+}
+#footer h2 {
+  font-weight: 700px;
+  font-size: 1.25rem;
+}
+#footer h3 {
+  font-weight: 700px;
+  font-size: 1rem;
 }
 @media (min-width: 1440px) {
   #footer {
