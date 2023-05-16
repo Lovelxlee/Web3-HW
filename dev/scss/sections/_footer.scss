@@ -16,6 +16,22 @@
         font-size: rem-calc(16px);
     
     }
+
+    p{
+        font-weight: 400px;
+        font-size: rem-calc(12px);
+    
+    }
+
+    #number{
+        a{
+            font-weight: 400px;
+            font-size: rem-calc(12px);
+
+        }
+
+
+    }
       @include xxl{
             grid-template-columns: auto 1200px auto;
             }
