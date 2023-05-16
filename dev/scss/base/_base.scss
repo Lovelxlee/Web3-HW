@@ -10,6 +10,18 @@ list-style-type: none;
 }
 }
 
+content-space-top{
+    margin-top: 16px;
+
+    @include md{
+        margin-top:24px;
+    }
+    @include lg{
+        margin-top:30px;
+    }
+}
+
+
 .show-xlarge{
 display: none;
 @include xxl{

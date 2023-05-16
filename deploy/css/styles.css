@@ -340,6 +340,20 @@ ul li {
   list-style-type: none;
 }
 
+content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  content-space-top {
+    margin-top: 30px;
+  }
+}
+
 .show-xlarge {
   display: none;
 }
@@ -468,6 +482,7 @@ footer > div {
   grid-template-areas: ". hero-aside .";
   color: var(grey);
   padding: 16px 0;
+  box-shadow: 0px 1px 1px rgb(42, 48, 0);
 }
 #hero section aside > div {
   grid-area: hero-aside;
@@ -492,6 +507,9 @@ footer > div {
 }
 
 /*-------hero-sub------*/
+#hero-sub {
+  color: snow;
+}
 @media (min-width: 768px) {
   #hero-sub {
     display: grid;
@@ -515,7 +533,6 @@ footer > div {
   grid-area: hero-sub;
   display: grid;
   grid-template-columns: 50% auto;
-  color: var(snow);
 }
 #hero-sub > div .hero-sub-content #hero-sub-left {
   background-color: var(--green);
@@ -565,11 +582,15 @@ footer > div {
 }
 #activities > div ul li img {
   width: 100%;
+  font-size: 0;
+  display: block;
 }
 #activities > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". activities .";
+  padding: 16px 0;
+  box-shadow: 0px 1px 1px rgb(42, 48, 54);
 }
 #activities > div ul li section > div {
   grid-area: activities;
@@ -685,6 +706,8 @@ footer > div {
 #footer > div ul button {
   background-color: var(--orange);
   color: white;
+  padding: 8px 16px;
+  display: inline-block;
 }
 #footer > div ul #f1 {
   grid-area: f1;
