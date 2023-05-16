@@ -16,6 +16,7 @@ html {
   --green: #2D401E;
   --orange: #FF9900;
   --tan: #FFCC9C;
+  --snow: #F8F9FA;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -435,7 +436,6 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  color: var(--snow);
 }
 footer > div {
   grid-area: footer;
@@ -448,24 +448,20 @@ footer > div {
   #hero section {
     display: grid;
     grid-template-columns: 40% auto;
-    padding: 16px;
   }
 }
 @media (min-width: 1024px) {
   #hero section {
     grid-template-columns: 50% auto;
-    padding: 16px;
   }
 }
 #hero section aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-aside .";
-  padding: 16px;
 }
 #hero section aside > div {
   grid-area: hero-aside;
-  padding: 16px;
 }
 #hero section #hero-left {
   background: var(--tan);
@@ -490,13 +486,11 @@ footer > div {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". hero-sub .";
-    padding: 16px;
   }
 }
 @media (min-width: 1440px) {
   #hero-sub {
     grid-template-columns: auto 1200px auto;
-    padding: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -504,14 +498,12 @@ footer > div {
     grid-area: hero-sub;
     display: grid;
     grid-template-columns: 50% auto;
-    padding: 16px;
   }
 }
 #hero-sub > div .hero-sub-content > div {
   grid-area: hero-sub;
   display: grid;
   grid-template-columns: 50% auto;
-  padding: 16px;
 }
 #hero-sub > div .hero-sub-content #hero-sub-left {
   background-color: var(--green);
