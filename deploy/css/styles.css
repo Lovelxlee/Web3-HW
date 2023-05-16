@@ -340,6 +340,10 @@ ul li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 content-space-top {
   margin-top: 16px;
 }
@@ -357,7 +361,7 @@ content-space-top {
 .generalbutton {
   padding: 8px 16px;
   background-color: var(--orange);
-  color: var(snow);
+  color: var(--black);
 }
 
 .show-xlarge {
@@ -405,6 +409,17 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav ul li a:link, nav ul li a:visited {
+  padding: 24px 36px;
+  border: 1px solid var(--snow);
+  color: var(--snow);
+  transition: 0.25s;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  background-color: var(--snow);
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */
@@ -471,6 +486,9 @@ footer > div {
 /* =============
     Heroes
 ============= */
+#hero section a {
+  color: var(--snow);
+}
 @media (min-width: 768px) {
   #hero section {
     display: grid;
@@ -715,10 +733,12 @@ footer > div {
   padding: 8px 16px;
   display: inline-block;
 }
+#footer > div ul #f1 a {
+  color: var(--snow);
+}
 @media (min-width: 768px) {
   #footer > div ul #f1 {
     grid-area: f1;
-    color: var(snow);
   }
 }
 #footer > div ul #f1 section {
@@ -727,7 +747,6 @@ footer > div {
 #footer > div ul #f1 section i {
   font-size: rem-calc 20;
   margin-right: 16px;
-  color: var(snow);
 }
 @media (min-width: 768px) {
   #footer > div ul #f2 {

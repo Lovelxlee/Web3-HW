@@ -40,17 +40,18 @@
 
                 
             #f1{
-        
+                a{      color: var(--snow);
+                }
                 @include md{
                     grid-area: f1;
-                    color: var(snow);
+
                 }
                     section{
                         display: flex;
                         i{
                             font-size:rem-calc (20);
                             margin-right: 16px;
-                            color: var(snow);
+
                         }
 
                                         
