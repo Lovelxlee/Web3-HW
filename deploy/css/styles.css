@@ -380,6 +380,10 @@ content-space-top {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1, h2, h3, h4, h5p {
   margin: 0;
   padding: 0;
