@@ -21,7 +21,12 @@ content-space-top{
     }
 }
 
+.generalbutton{
+padding: 8px 16px;
+background-color: var(--orange);
+color: var(snow);
 
+}
 .show-xlarge{
 display: none;
 @include xxl{

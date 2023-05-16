@@ -354,6 +354,12 @@ content-space-top {
   }
 }
 
+.generalbutton {
+  padding: 8px 16px;
+  background-color: var(--orange);
+  color: var(snow);
+}
+
 .show-xlarge {
   display: none;
 }
@@ -709,11 +715,24 @@ footer > div {
   padding: 8px 16px;
   display: inline-block;
 }
-#footer > div ul #f1 {
-  grid-area: f1;
+@media (min-width: 768px) {
+  #footer > div ul #f1 {
+    grid-area: f1;
+    color: var(snow);
+  }
 }
-#footer > div ul #f2 {
-  grid-area: f2;
+#footer > div ul #f1 section {
+  display: flex;
+}
+#footer > div ul #f1 section i {
+  font-size: rem-calc 20;
+  margin-right: 16px;
+  color: var(snow);
+}
+@media (min-width: 768px) {
+  #footer > div ul #f2 {
+    grid-area: f2;
+  }
 }
 #footer > div ul #f3 {
   grid-area: f3;
