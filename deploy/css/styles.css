@@ -705,7 +705,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   transition: 0.25s;
 }
 #hero #hero-bottom .hero-bottom-card > div aside a:link:hover, #hero #hero-bottom .hero-bottom-card > div aside a:link:active, #hero #hero-bottom .hero-bottom-card > div aside a:visited:hover, #hero #hero-bottom .hero-bottom-card > div aside a:visited:active {
-  color: var(--blueDark);
+  color: var(--darkorange);
 }
 #hero #hero-bottom #hero-bottom-left {
   background-color: var(--darkorange);
