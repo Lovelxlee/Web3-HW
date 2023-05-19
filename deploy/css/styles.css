@@ -439,7 +439,8 @@ header #logo-nav > div {
   grid-area: logo-nav;
 }
 header #search {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
@@ -764,6 +765,9 @@ footer > div {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "g1 g1 g2 g2 g3 g3" ". g4 g4 g5 g5 .";
   }
+}
+#activities > div ul li {
+  grid-template-rows: 40vh auto;
 }
 #activities > div ul li img {
   width: 100%;

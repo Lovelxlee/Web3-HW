@@ -18,7 +18,8 @@ header{
         }   
     }
 #search{
-    display: grid; 
+    display: flex; 
+    justify-content: center;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
 
