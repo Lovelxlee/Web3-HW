@@ -587,7 +587,7 @@ footer > div #f2 h1 {
   }
 }
 footer > div #f2 form input {
-  background-color: var(--gray);
+  background-color: var(--white);
   width: 100%;
   border-radius: 0;
   border: none;
