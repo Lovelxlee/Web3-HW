@@ -688,7 +688,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-sub .";
-  color: white;
+  color: black;
   padding: 16px 0;
 }
 #hero #hero-bottom .hero-bottom-card > div {
