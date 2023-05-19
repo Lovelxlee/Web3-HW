@@ -775,7 +775,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   }
 }
 #sub-hero > div .sub-hero-card {
-  background-color: var(--blue);
+  background-color: var(--green);
   padding: 16px;
   color: white;
   display: flex;
