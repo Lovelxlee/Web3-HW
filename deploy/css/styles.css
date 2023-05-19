@@ -952,7 +952,7 @@ footer > div {
   grid-area: s4;
 }
 
-img {
+#image img {
   font-size: 0;
   display: block;
 }
