@@ -701,7 +701,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 }
 #hero #hero-bottom .hero-bottom-card > div aside a:link, #hero #hero-bottom .hero-bottom-card > div aside a:visited {
   display: flex;
-  color: white;
+  color: black;
   transition: 0.25s;
 }
 #hero #hero-bottom .hero-bottom-card > div aside a:link:hover, #hero #hero-bottom .hero-bottom-card > div aside a:link:active, #hero #hero-bottom .hero-bottom-card > div aside a:visited:hover, #hero #hero-bottom .hero-bottom-card > div aside a:visited:active {
@@ -747,6 +747,81 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 }
 #hero #hero-bottom #hero-bottom-right h3 span {
   font-weight: 700;
+}
+
+/* =============
+    Sub-Hero
+============= */
+@media (min-width: 768px) {
+  #sub-hero {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". sub-hero-cards .";
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  #sub-hero {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#sub-hero > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #sub-hero > div {
+    grid-area: sub-hero-cards;
+    grid-template-columns: 50% auto;
+  }
+}
+#sub-hero > div .sub-hero-card {
+  background-color: var(--blue);
+  padding: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+}
+#sub-hero > div .sub-hero-card h1 {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #sub-hero > div .sub-hero-card h1 {
+    font-size: 1.875rem;
+  }
+}
+#sub-hero > div .sub-hero-card a {
+  margin-top: 8px;
+}
+#sub-hero > div .sub-hero-card aside {
+  margin-left: auto;
+  width: 35%;
+}
+@media (min-width: 576px) {
+  #sub-hero > div .sub-hero-card aside {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  #sub-hero > div .sub-hero-card aside {
+    width: 20%;
+  }
+}
+#sub-hero > div .sub-hero-card aside > div {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  border: 3px solid white;
+  overflow: hidden;
+}
+#sub-hero > div .sub-hero-card aside #sub-left-img {
+  background-image: url("../img/subHero/planning.jpg");
+}
+#sub-hero > div .sub-hero-card aside #sub-right-img {
+  background-image: url("../img/subHero/tickets.jpg");
 }
 
 /* =============
