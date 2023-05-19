@@ -62,7 +62,7 @@
         }
 
         #hero-bottom-left{
-            background-color: var(--darkorange);
+            background-color: var(--tan);
             @include xxl{
                 grid-template-columns: 30% auto 16px;
             }

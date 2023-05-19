@@ -708,7 +708,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   color: var(--darkorange);
 }
 #hero #hero-bottom #hero-bottom-left {
-  background-color: var(--darkorange);
+  background-color: var(--tan);
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-left {
