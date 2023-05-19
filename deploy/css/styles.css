@@ -439,10 +439,12 @@ header #logo-nav > div {
   grid-area: logo-nav;
 }
 header #search {
-  display: flex;
-  justify-content: center;
+  display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0;
+  position: sticky;
+  top: 100px;
 }
 @media (min-width: 768px) {
   header #search {
@@ -452,50 +454,49 @@ header #search {
 @media (min-width: 1440px) {
   header #search {
     grid-template-columns: auto 1200px auto;
-    padding: 30px 0;
   }
 }
 header #search > div {
-  grid-area: logo-nav;
+  grid-area: search;
 }
 header #search > div form {
   display: flex;
 }
 header #search > div form input {
-  width: 100%;
-  border: 1px solid black;
   border: none;
   border-bottom: 1px solid var(--black);
+  width: 100%;
   border-radius: 0;
-  background-color: transparent;
   margin-right: 8px;
-  font-weight: 400px;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  color: var(--blueDark);
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   header #search > div form input {
     font-size: 1.875rem;
-    font-weight: 300px;
+    font-weight: 300;
   }
 }
 @media (min-width: 1200px) {
   header #search > div form input {
     font-size: 2.1875rem;
-    font-weight: 300px;
   }
 }
-@media (min-width: 1440px) {
-  header #search > div form input {
-    font-size: 2.1875rem;
-    font-weight: 300px;
-  }
-}
-header #search > div form button {
+header #search > div button {
+  border: none;
   background-color: var(--orange);
-  border: 0;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px 16px;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 1.875rem;
 }
+header #search > div button:hover {
+  background-color: var(--darkorange);
+  color: var(--black);
+}
+
 /* =============
     Footer
 ============= */
