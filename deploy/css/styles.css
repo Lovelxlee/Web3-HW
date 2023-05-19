@@ -531,7 +531,7 @@ footer > div {
   }
 }
 footer > div #f1 {
-  color: var(--black);
+  color: var(--white);
 }
 @media (min-width: 768px) {
   footer > div #f1 {
@@ -559,12 +559,12 @@ footer > div #f1 section {
   display: flex;
 }
 footer > div #f1 section i {
-  color: var(--red);
+  color: var(--orange);
   font-size: 1.25rem;
   margin-right: 16px;
 }
 footer > div #f1 a:link, footer > div #f1 a:visited {
-  color: var(--blueInput);
+  color: var(--darkorange);
 }
 footer > div #f1 a:link:hover, footer > div #f1 a:link:active, footer > div #f1 a:visited:hover, footer > div #f1 a:visited:active {
   color: var(--white);

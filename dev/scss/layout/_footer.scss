@@ -35,7 +35,7 @@ footer{
 
 
         #f1{
-            color: var(--black);
+            color: var(--white);
             @include md{
                 grid-area: f1;
             }
@@ -64,7 +64,7 @@ footer{
                 display: flex;
 
                 i{
-                    color: var(--red);
+                    color: var(--orange);
                     font-size: rem-calc(20);
                     margin-right: 16px;
                 }
@@ -72,7 +72,7 @@ footer{
             }
 
             a:link, a:visited{
-                color: var(--blueInput);
+                color: var(--darkorange);
                 &:hover, &:active{
                     color: var(--white);
                 }
