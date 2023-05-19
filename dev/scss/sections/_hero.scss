@@ -87,7 +87,7 @@
         }
 
         #hero-bottom-right{
-            background-color: var(--red);
+            background-color: var(--orange);
             @include xxl{
                 grid-template-columns: 16px auto 30%;
             }

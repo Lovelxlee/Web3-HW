@@ -734,7 +734,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   }
 }
 #hero #hero-bottom #hero-bottom-right {
-  background-color: var(--red);
+  background-color: var(--orange);
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-right {
