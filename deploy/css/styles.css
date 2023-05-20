@@ -396,27 +396,27 @@ h1, h2, h3, h4, h5p {
 /* =============
     Buttons
 ============= */
-.red-link:link, .red-link:visited {
-  background-color: var(--snow);
-  color: white;
+.orange-link:link, .orange-link:visited {
+  background-color: var(--orange);
+  color: black;
   padding: 8px 16px;
   display: inline-block;
   transition: 0.25s;
 }
-.red-link:link:hover, .red-link:visited:hover {
-  background-color: var(--redDark);
+.orange-link:link:hover, .orange-link:visited:hover {
+  background-color: var(--darkorange);
 }
 
-.red-button {
-  background-color: var(--red);
-  color: white;
+.orange-button {
+  background-color: var(--orange);
+  color: black;
   padding: 8px 16px;
   display: inline-block;
   transition: 0.25s;
   cursor: pointer;
 }
-.red-button:hover {
-  background-color: var(--redDark);
+.orange-button:hover {
+  background-color: var(--darkorange);
 }
 
 /* =============
@@ -592,15 +592,15 @@ footer > div #f1 section {
   display: flex;
 }
 footer > div #f1 section i {
-  color: var(--white);
+  color: var(--orange);
   font-size: 1.25rem;
   margin-right: 16px;
 }
 footer > div #f1 a:link, footer > div #f1 a:visited {
-  color: var(--darkorange);
+  color: var(--snow);
 }
 footer > div #f1 a:link:hover, footer > div #f1 a:link:active, footer > div #f1 a:visited:hover, footer > div #f1 a:visited:active {
-  color: var(--white);
+  color: var(--orange);
 }
 @media (min-width: 768px) {
   footer > div #f2 {
@@ -631,7 +631,7 @@ footer > div #f2 form div {
   text-align: right;
 }
 footer > div #f2 form div button {
-  margin-top: 16px;
+  margin-top: 50px;
   border: none;
 }
 @media (min-width: 768px) {
@@ -673,12 +673,12 @@ footer > div #f3 ul li {
   }
 }
 footer > div #f3 ul li a:link, footer > div #f3 ul li a:visited {
-  color: var(--white);
+  color: var(--orange);
   font-size: 1.875rem;
   transition: 0.25s;
 }
 footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, footer > div #f3 ul li a:visited:hover, footer > div #f3 ul li a:visited:active {
-  color: var(--white);
+  color: var(--darkorange);
 }
 
 /* =============

@@ -64,7 +64,7 @@ footer{
                 display: flex;
 
                 i{
-                    color: var(--white);
+                    color: var(--orange);
                     font-size: rem-calc(20);
                     margin-right: 16px;
                 }
@@ -72,9 +72,9 @@ footer{
             }
 
             a:link, a:visited{
-                color: var(--darkorange);
+                color: var(--snow);
                 &:hover, &:active{
-                    color: var(--white);
+                    color: var(--orange);
                 }
             }
         }   
@@ -109,8 +109,9 @@ footer{
                 div{
                     text-align: right;
                     button{
-                        margin-top: 16px;
+                        margin-top: 50px;
                         border: none;
+                        
                     }
                 }
 
@@ -154,12 +155,12 @@ footer{
                     }
 
                     a:link, a:visited{
-                        color: var(--white);
+                        color: var(--orange);
                         font-size: rem-calc(30);
                         transition: 0.25s;
 
                         &:hover, &:active{
-                            color: var(--white);
+                            color: var(--darkorange);
                         }
                     }
                 }
