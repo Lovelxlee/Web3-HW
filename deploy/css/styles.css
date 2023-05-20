@@ -15,6 +15,7 @@ html {
   --white: #ffffff;
   --green: #2D401E;
   --orange: #FF9900;
+  --darkorange: #DA8300;
   --tan: #FFCC9C;
   --snow: #F8F9FA;
   --grey: #2A3036;
@@ -332,48 +333,51 @@ template {
 /* =============
     Base
 ============= */
+body {
+  position: relative;
+}
+
 ul {
   padding: 0;
   margin: 0;
 }
 ul li {
-  list-style-type: none;
+  list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-content-space-top {
+.content-space-top {
   margin-top: 16px;
 }
 @media (min-width: 768px) {
-  content-space-top {
+  .content-space-top {
     margin-top: 24px;
   }
 }
 @media (min-width: 1024px) {
-  content-space-top {
+  .content-space-top {
     margin-top: 30px;
   }
 }
 
-.generalbutton {
-  padding: 8px 16px;
-  background-color: var(--orange);
-  color: var(--black);
-}
-
-.show-xlarge {
+.show-large {
   display: none;
 }
-@media (min-width: 1440px) {
-  .show-xlarge {
+@media (min-width: 1024px) {
+  .show-large {
     display: block;
   }
 }
 
-.large-images {
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
+.test-imgs {
   width: 100%;
 }
 
@@ -392,6 +396,29 @@ h1, h2, h3, h4, h5p {
 /* =============
     Buttons
 ============= */
+.red-link:link, .red-link:visited {
+  background-color: var(--snow);
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: 0.25s;
+}
+.red-link:link:hover, .red-link:visited:hover {
+  background-color: var(--redDark);
+}
+
+.red-button {
+  background-color: var(--red);
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.red-button:hover {
+  background-color: var(--redDark);
+}
+
 /* =============
     Forms
 ============= */
@@ -410,18 +437,24 @@ textarea {
   -webkit-appearance: none;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--blueDark);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--blueDark);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--blueDark);
+}
+
 /* =============
     Navigation
 ============= */
-nav ul li a:link, nav ul li a:visited {
-  padding: 24px 36px;
-  border: 1px solid var(--snow);
-  color: var(--snow);
-  transition: 0.25s;
-}
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-  background-color: var(--snow);
-  color: var(--white);
+a {
+  text-decoration: none;
 }
 
 /* =============
@@ -640,7 +673,7 @@ footer > div #f3 ul li {
   }
 }
 footer > div #f3 ul li a:link, footer > div #f3 ul li a:visited {
-  color: white;
+  color: var;
   font-size: 1.875rem;
   transition: 0.25s;
 }

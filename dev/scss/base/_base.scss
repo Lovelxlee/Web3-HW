@@ -1,19 +1,18 @@
 /* =============
     Base
 ============= */
-
+body{
+position: relative;
+}
 ul{
 padding: 0;
 margin: 0;
 li{
-list-style-type: none;
+list-style: none;
 }
 }
-a{
-    text-decoration: none;
 
-}
-content-space-top{
+.content-space-top{
     margin-top: 16px;
 
     @include md{
@@ -24,21 +23,22 @@ content-space-top{
     }
 }
 
-.generalbutton{
-padding: 8px 16px;
-background-color: var(--orange);
-color: var(--black);
 
-}
-.show-xlarge{
-display: none;
-@include xxl{
-    display:block;
+.show-large{
+    display: none;
+    @include lg{
+        display: block;
+    }
 }
 
+.show-extra-large{
+    display: none;
+    @include xxl{
+        display: block;
+    }
 }
 
-.large-images{
+.test-imgs{
     width: 100%;
 }
 
