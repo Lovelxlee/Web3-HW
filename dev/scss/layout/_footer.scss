@@ -154,12 +154,12 @@ footer{
                     }
 
                     a:link, a:visited{
-                        color: var;
+                        color: var(--orange);
                         font-size: rem-calc(30);
                         transition: 0.25s;
 
                         &:hover, &:active{
-                            color: var(--blueInput);
+                            color: var(--darkorange);
                         }
                     }
                 }

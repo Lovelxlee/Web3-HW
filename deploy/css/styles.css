@@ -673,12 +673,12 @@ footer > div #f3 ul li {
   }
 }
 footer > div #f3 ul li a:link, footer > div #f3 ul li a:visited {
-  color: var;
+  color: var(--orange);
   font-size: 1.875rem;
   transition: 0.25s;
 }
 footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, footer > div #f3 ul li a:visited:hover, footer > div #f3 ul li a:visited:active {
-  color: var(--blueInput);
+  color: var(--darkorange);
 }
 
 /* =============
