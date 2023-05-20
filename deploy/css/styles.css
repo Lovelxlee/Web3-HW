@@ -592,7 +592,7 @@ footer > div #f1 section {
   display: flex;
 }
 footer > div #f1 section i {
-  color: var(--orange);
+  color: var(--white);
   font-size: 1.25rem;
   margin-right: 16px;
 }
