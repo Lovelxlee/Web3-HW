@@ -231,6 +231,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/activities\/activities-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 93010,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activities\/activities-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/activities\/biking.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -281,6 +294,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/gallery\/gallery-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 719458,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/gallery-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/gallery-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 214417,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/gallery-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/gallery-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 177558,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/gallery-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/global\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -301,41 +353,54 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/heroes\/lake.svg" : {
+    "\/deploy\/img\/hero\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 1811919,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero\/lake.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/heroes\/lake.svg",
+      "oAP" : "\/deploy\/img\/hero\/lake.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/heroes\/main.svg" : {
+    "\/deploy\/img\/hero\/main.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/heroes\/main.svg",
+      "oAP" : "\/deploy\/img\/hero\/main.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/heroes\/waterfall.svg" : {
+    "\/deploy\/img\/hero\/waterfall.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/heroes\/waterfall.svg",
+      "oAP" : "\/deploy\/img\/hero\/waterfall.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/heroes\/wolf.svg" : {
+    "\/deploy\/img\/hero\/wolf.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/heroes\/wolf.svg",
+      "oAP" : "\/deploy\/img\/hero\/wolf.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -482,14 +547,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/main.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/main.html",
       "oF" : 0
     },
     "\/dev\/content\/subHero.kit" : {

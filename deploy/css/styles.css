@@ -465,7 +465,7 @@ header #logo-nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
   background-color: var(--green);
-  color: var(--black);
+  color: var(--white);
   padding: 16px 0 24px;
 }
 header #logo-nav > div {
@@ -631,7 +631,7 @@ footer > div #f2 form div {
   text-align: right;
 }
 footer > div #f2 form div button {
-  margin-top: 50px;
+  margin-top: 16px;
   border: none;
 }
 @media (min-width: 768px) {
@@ -907,7 +907,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   #activities > div ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4" ". g5 g5 .";
+    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
     gap: 16px;
   }
 }
@@ -915,7 +915,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   #activities > div ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "g1 g1 g2 g2 g3 g3" ". g4 g4 g5 g5 .";
+    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
   }
 }
 #activities > div ul li {
@@ -936,35 +936,50 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 #activities > div ul li section > div {
   grid-area: activities;
 }
-@media (min-width: 768px) {
-  #activities > div ul #g1 {
-    grid-area: g1;
-  }
+#activities > div #n1 .activities-img {
+  background-image: url("../img/activities/activities-1.jpg");
 }
 @media (min-width: 768px) {
-  #activities > div ul #g2 {
-    grid-area: g2;
+  #activities > div #n1 {
+    grid-area: n1;
   }
+}
+#activities > div #n2 .activities-img {
+  background-image: url("../img/activities/activities-2.jpg");
 }
 @media (min-width: 768px) {
-  #activities > div ul #g3 {
-    grid-area: g3;
+  #activities > div #n2 {
+    grid-area: n2;
   }
+}
+#activities > div #n3 .activities-img {
+  background-image: url("../img/activities/activities-3.jpg");
 }
 @media (min-width: 768px) {
-  #activities > div ul #g4 {
-    grid-area: g4;
+  #activities > div #n3 {
+    grid-area: n3;
   }
+}
+#activities > div #n4 .activities-img {
+  background-image: url("../img/activities/activities-4.jpg");
 }
 @media (min-width: 768px) {
-  #activities > div ul #g5 {
-    grid-area: g5;
+  #activities > div #n4 {
+    grid-area: n4;
   }
 }
-#activities > div li {
+#activities > div #n5 .activities-img {
+  background-image: url("../img/activities/activities-5.jpg");
+}
+@media (min-width: 768px) {
+  #activities > div #n5 {
+    grid-area: n5;
+  }
+}
+#activities li {
   list-style: none;
 }
-#activities > div li img {
+#activities li img {
   width: 100%;
 }
 

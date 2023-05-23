@@ -57,17 +57,17 @@ ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
-        "g1 g1 g2 g2"
-        "g3 g3 g4 g4"
-        ". g5 g5 .";
+        "n1 n1 n2 n2"
+        "n3 n3 n4 n4"
+        ". n5 n5 .";
         gap: 16px;
     }
         @include lg{
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-areas: 
-            "g1 g1 g2 g2 g3 g3"
-            ". g4 g4 g5 g5 .";
+            "n1 n1 n2 n2 n3 n3"
+            ". n4 n4 n5 n5 .";
     }
     li{
         grid-template-rows: 40vh auto;
@@ -90,32 +90,48 @@ box-shadow: 0px 1px 1px rgba(42, 48, 54, 8.3);
 }
 
 
-
     }
     }
-    #g1{
+    }
+    #n1{
+        .activities-img {
+            background-image: url("../img/activities/activities-1.jpg");
+        }
         @include md{
-            grid-area: g1;
+            grid-area: n1;
         }
     }
-    #g2{
-        @include md{
-        grid-area: g2;
+    
+    #n2{
+        .activities-img {
+            background-image: url("../img/activities/activities-2.jpg");
+        }
+            @include md{
+        grid-area: n2;
         }
     }
-    #g3{
-        @include md{
-        grid-area: g3;
+    #n3{
+        .activities-img {
+            background-image: url("../img/activities/activities-3.jpg");
+        }
+            @include md{
+        grid-area: n3;
         }
     }
-    #g4{
-        @include md{
-        grid-area: g4;
+    #n4{
+        .activities-img {
+            background-image: url("../img/activities/activities-4.jpg");
+        }
+            @include md{
+        grid-area: n4;
         }
     }
-    #g5{
-        @include md{
-        grid-area: g5;
+    #n5{
+        .activities-img {
+            background-image: url("../img/activities/activities-5.jpg");
+        }
+            @include md{
+        grid-area: n5;
         }
     }
         
@@ -135,4 +151,4 @@ box-shadow: 0px 1px 1px rgba(42, 48, 54, 8.3);
                 
             }
         }
-    }  
+    
