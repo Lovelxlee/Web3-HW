@@ -863,13 +863,18 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 @media (min-width: 768px) {
   #activities {
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 0;
+    margin-left: 16px;
+    margin-right: 16px;
     grid-template-areas: ". activities .";
   }
 }
 @media (min-width: 1440px) {
   #activities {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: 0;
+    margin-left: 225px;
+    margin-right: 225px;
+    grid-template-areas: ". activities .";
   }
 }
 #activities > div {

@@ -5,12 +5,18 @@
 #activities{
     @include md{
         display: grid;
-        grid-template-columns: 16px auto 16px;
+        grid-template-columns: 0;
+        margin-left: 16px;
+        margin-right: 16px;
         grid-template-areas: ". activities .";
     }
 
     @include xxl{
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: 0;
+        margin-left: 225px;
+        margin-right: 225px;
+        grid-template-areas: ". activities .";
+
     }
 
     >div{
