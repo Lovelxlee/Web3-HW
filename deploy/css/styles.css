@@ -860,33 +860,11 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     Activities
 ============= */
-#activities h2 {
-  font-weight: 700px;
-  font-size: 1.6875rem;
-}
-#activities p {
-  font-weight: 300px;
-  font-size: 1rem;
-}
-#activities h1 {
-  font-weight: 400px;
-  font-size: 1.25rem;
-}
 @media (min-width: 768px) {
   #activities {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". activities .";
-  }
-  #activities h1 {
-    font-weight: 400px;
-    font-size: 1.75rem;
-  }
-}
-@media (min-width: 1024px) {
-  #activities h1 {
-    font-weight: 300px;
-    font-size: 2.3125rem;
   }
 }
 @media (min-width: 1440px) {
@@ -894,47 +872,76 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
     grid-template-columns: auto 1200px auto;
   }
 }
+#activities > div {
+  display: grid;
+  gap: 16px;
+}
 @media (min-width: 768px) {
   #activities > div {
-    grid-area: activities;
-    background-color: var(--snow);
-  }
-}
-#activities > div ul {
-  padding: 0px 0px 16px 0px;
-}
-@media (min-width: 768px) {
-  #activities > div ul {
-    display: grid;
+    grid-area: new;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
-    gap: 16px;
+    grid-template-areas: "nt nt nt nt" "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5 .";
   }
 }
 @media (min-width: 1024px) {
-  #activities > div ul {
-    display: grid;
+  #activities > div {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
+    grid-template-areas: "nt nt nt nt nt nt" "n1 n1 n2 n2 n3 n3" ".. n4 n4 n5 n5 ..";
   }
 }
-#activities > div ul li {
-  grid-template-rows: 40vh auto;
+@media (min-width: 768px) {
+  #activities > div h1 {
+    grid-area: nt;
+  }
 }
-#activities > div ul li img {
-  width: 100%;
-  font-size: 0;
-  display: block;
-}
-#activities > div ul li section {
+#activities > div .card-container {
+  background-color: var(--blueLight);
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". activities .";
-  padding: 16px 0;
-  box-shadow: 0px 1px 1px rgb(42, 48, 54);
+  gap: 0;
+  grid-template-rows: 30vh auto;
 }
-#activities > div ul li section > div {
-  grid-area: activities;
+@media (min-width: 768px) {
+  #activities > div .card-container {
+    grid-template-rows: 20vh auto;
+  }
+}
+#activities > div .card-container .activities-img {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+#activities > div .card-container .card-data {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  #activities > div .card-container .card-data {
+    position: relative;
+  }
+}
+#activities > div .card-container .card-data h1 {
+  font-size: 1.6875rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#activities > div .card-container .card-data p {
+  padding-bottom: 50px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  #activities > div .card-container .card-data p {
+    padding-bottom: 75px;
+  }
+}
+@media (min-width: 768px) {
+  #activities > div .card-container .card-data a {
+    position: absolute;
+    z-index: 10000;
+    bottom: 16px;
+    left: 16px;
+  }
 }
 #activities > div #n1 .activities-img {
   background-image: url("../img/activities/activities-1.jpg");
@@ -970,17 +977,12 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 }
 #activities > div #n5 .activities-img {
   background-image: url("../img/activities/activities-5.jpg");
+  background-size: cover;
 }
 @media (min-width: 768px) {
   #activities > div #n5 {
     grid-area: n5;
   }
-}
-#activities li {
-  list-style: none;
-}
-#activities li img {
-  width: 100%;
 }
 
 @media (min-width: 1024px) {
