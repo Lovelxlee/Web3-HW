@@ -10,10 +10,19 @@ scroll-behavior: smooth;
 }
 
 nav{
-
+display: none;
+@include lg{
+    display: block;
+}
 ul{
 
+@include lg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 16px;
 
+}
 
 
 
@@ -24,17 +33,31 @@ ul{
 
 li{
     text-align: right;
+    @include lg{
+        margin-left: 16px;
+    }
 a:link, a:visited{
+    
     display: inline-block;
     color: black;
     padding: 16px 0 16px;
     font-weight: 500;
 
+    @include lg{
+padding: 24px 36px;
+border: 1px solid var(--snow);
+color: var(--snow);
+border-radius: 6px;
+transition: 0.25s;
 
+    }
 
-display: inline-block
-
-
+&:hover, &:active{
+    @include lg{
+    background-color: var(--snow);
+    color:var(--orange);
+    }
+}
 
 
 

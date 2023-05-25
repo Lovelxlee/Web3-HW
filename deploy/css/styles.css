@@ -467,15 +467,50 @@ html {
   display: block !important;
 }
 
+nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 16px;
+  }
+}
 nav ul li {
   text-align: right;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 16px;
+  }
 }
 nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   color: black;
   padding: 16px 0 16px;
   font-weight: 500;
-  display: inline-block;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 36px;
+    border: 1px solid var(--snow);
+    color: var(--snow);
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    background-color: var(--snow);
+    color: var(--orange);
+  }
 }
 
 /* =============
@@ -493,6 +528,11 @@ header {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
+@media (min-width: 1024px) {
+  header {
+    grid-template-areas: "logo nav";
+  }
+}
 header #logo {
   grid-area: logo;
   display: flex;
@@ -506,6 +546,11 @@ header #burger-container {
   padding-right: 16px;
   display: flex;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
 }
 header #burger-container button {
   border: none;
@@ -744,6 +789,11 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
     height: 50vh;
   }
 }
+@media (min-width: 1024px) {
+  #hero #hero-img {
+    scroll-margin-top: 250px;
+  }
+}
 @media (min-width: 1200px) {
   #hero #hero-img {
     background-position: center 80%;
@@ -921,6 +971,11 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
     grid-template-areas: ". activities .";
   }
 }
+@media (min-width: 1024px) {
+  #activities {
+    scroll-margin-top: 250px;
+  }
+}
 @media (min-width: 1440px) {
   #activities {
     grid-template-columns: 0;
@@ -1050,6 +1105,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+    scroll-margin-top: 250px;
   }
 }
 @media (min-width: 1440px) {

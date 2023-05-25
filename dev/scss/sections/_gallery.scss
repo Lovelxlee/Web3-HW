@@ -4,6 +4,8 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery .";
+            scroll-margin-top: 250px;
+
 }
 
 @include xxl{

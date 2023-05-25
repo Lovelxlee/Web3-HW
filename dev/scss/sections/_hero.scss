@@ -12,7 +12,9 @@
         @include md{
             height: 50vh;
         }
-
+        @include lg{
+            scroll-margin-top: 250px;
+        }
         @include xl{
             background-position: center 80%;
             height: 65vh;
