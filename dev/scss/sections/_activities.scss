@@ -3,6 +3,8 @@
 ============= */
 
 #activities{
+    scroll-margin-top: 90px;
+    
     @include md{
         display: grid;
         grid-template-columns: 0;

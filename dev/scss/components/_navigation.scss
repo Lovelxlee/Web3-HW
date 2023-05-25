@@ -1,12 +1,16 @@
 /* =============
     Navigation
 ============= */
+html{
+scroll-behavior: smooth;
+
+}
 .show-menu{
     display: block !important;
 }
 
 nav{
-display: none;
+
 ul{
 
 

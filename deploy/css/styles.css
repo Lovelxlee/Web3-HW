@@ -459,13 +459,14 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 .show-menu {
   display: block !important;
 }
 
-nav {
-  display: none;
-}
 nav ul li {
   text-align: right;
 }
@@ -512,7 +513,7 @@ header #burger-container button {
   color: white;
   font-size: 1.25rem;
 }
-header #main-menu {
+header nav {
   grid-area: nav;
 }
 header #search {
@@ -729,6 +730,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     Heroes
 ============= */
+#hero {
+  scroll-margin-top: 90px;
+}
 #hero #hero-img {
   background-image: url("../img/hero/hero.jpg");
   background-size: cover;
@@ -905,6 +909,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     Activities
 ============= */
+#activities {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 768px) {
   #activities {
     display: grid;
@@ -1035,6 +1042,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
   }
 }
 
+#gallery {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 1024px) {
   #gallery {
     display: grid;
