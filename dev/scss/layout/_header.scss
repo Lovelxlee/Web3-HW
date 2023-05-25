@@ -13,14 +13,17 @@ header{
         padding-right: 16px;
         position: fixed;
         width: 100%;
+        box-sizing:border-box;
+        box-shadow: 0px 1px 1px rgba(42,48,54,0.3);
 
 
         #logo{
         grid-area: logo;
         display: flex;
+        padding-top: 16px;
         padding-left:16px;
         align-items: center;
-        border: 1px solid blue;
+
 
         }   
 
@@ -30,7 +33,7 @@ header{
             padding-right:16px;
             display: flex;
             align-items: center;
-            border: 1px solid red;
+
             button{
                 border:none;
                 background-color: transparent;
@@ -40,7 +43,7 @@ header{
             }
         }
         
-        #nav{
+        #main-menu{
             grid-area: nav;
         }
     
@@ -51,7 +54,7 @@ header{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     padding: 16px 0;
-    border: 1px solid orange;
+
 
 
     position: sticky;
@@ -62,7 +65,6 @@ header{
     }
     @include xxl{
         grid-template-columns: auto 1200px auto;
-        padding:24px 0;
     }
 
     

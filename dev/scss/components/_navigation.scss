@@ -1,9 +1,12 @@
 /* =============
     Navigation
 ============= */
+.show-menu{
+    display: block !important;
+}
 
 nav{
-    display: none;
+display: none;
 ul{
 
 
@@ -16,7 +19,12 @@ ul{
 
 
 li{
+    text-align: right;
 a:link, a:visited{
+    display: inline-block;
+    color: black;
+    padding: 16px 0 16px;
+    font-weight: 500;
 
 
 

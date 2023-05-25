@@ -398,6 +398,7 @@ h1, h2, h3, h4, h5p {
 ============= */
 .orange-link:link, .orange-link:visited {
   background-color: var(--orange);
+  text-decoration-line: none;
   color: black;
   padding: 8px 16px;
   display: inline-block;
@@ -458,10 +459,21 @@ textarea {
 /* =============
     Navigation
 ============= */
+.show-menu {
+  display: block !important;
+}
+
 nav {
   display: none;
 }
+nav ul li {
+  text-align: right;
+}
 nav ul li a:link, nav ul li a:visited {
+  display: inline-block;
+  color: black;
+  padding: 16px 0 16px;
+  font-weight: 500;
   display: inline-block;
 }
 
@@ -477,13 +489,15 @@ header {
   padding-right: 16px;
   position: fixed;
   width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
 header #logo {
   grid-area: logo;
   display: flex;
+  padding-top: 16px;
   padding-left: 16px;
   align-items: center;
-  border: 1px solid blue;
 }
 header #burger-container {
   justify-content: flex-end;
@@ -491,7 +505,6 @@ header #burger-container {
   padding-right: 16px;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 header #burger-container button {
   border: none;
@@ -499,7 +512,7 @@ header #burger-container button {
   color: white;
   font-size: 1.25rem;
 }
-header #nav {
+header #main-menu {
   grid-area: nav;
 }
 header #search {
@@ -507,7 +520,6 @@ header #search {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   padding: 16px 0;
-  border: 1px solid orange;
   position: sticky;
   top: 100px;
 }
@@ -519,7 +531,6 @@ header #search {
 @media (min-width: 1440px) {
   header #search {
     grid-template-columns: auto 1200px auto;
-    padding: 24px 0;
   }
 }
 header #search > div {
