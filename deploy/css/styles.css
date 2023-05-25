@@ -419,6 +419,11 @@ h1, h2, h3, h4, h5p {
   background-color: var(--darkorange);
 }
 
+#burger-btn {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Forms
 ============= */
@@ -453,30 +458,48 @@ textarea {
 /* =============
     Navigation
 ============= */
-a {
-  text-decoration: none;
+nav {
+  display: none;
+}
+nav ul li a:link, nav ul li a:visited {
+  display: inline-block;
 }
 
 /* =============
     Header
 ============= */
-header #logo-nav {
+header {
   display: grid;
   grid-template-columns: 50% auto;
-  grid-template-areas: "logo-nav burger" "nav nav";
+  grid-template-areas: "logo burger" "nav nav" "search search";
   background-color: var(--green);
   color: var(--white);
-  padding: 16px 0 24px;
+  padding-right: 16px;
+  position: fixed;
+  width: 100%;
+}
+header #logo {
+  grid-area: logo;
+  display: flex;
   padding-left: 16px;
-  display: grid;
+  align-items: center;
+  border: 1px solid blue;
 }
-header #logo-nav > div {
-  grid-area: logo-nav;
-}
-header #logo-nav #burger-container {
+header #burger-container {
+  justify-content: flex-end;
   grid-area: burger;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
 }
-header #logo-nav nav {
+header #burger-container button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.25rem;
+}
+header #nav {
   grid-area: nav;
 }
 header #search {
@@ -484,6 +507,7 @@ header #search {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   padding: 16px 0;
+  border: 1px solid orange;
   position: sticky;
   top: 100px;
 }
@@ -495,6 +519,7 @@ header #search {
 @media (min-width: 1440px) {
   header #search {
     grid-template-columns: auto 1200px auto;
+    padding: 24px 0;
   }
 }
 header #search > div {
@@ -509,8 +534,9 @@ header #search > div form input {
   width: 100%;
   border-radius: 0;
   margin-right: 8px;
+  padding: 8px;
   font-size: 0.875rem;
-  color: var(--blueDark);
+  color: black;
 }
 @media (min-width: 768px) {
   header #search > div form input {

@@ -3,6 +3,7 @@
 ============= */
 
 nav{
+    display: none;
 ul{
 
 
@@ -15,12 +16,12 @@ ul{
 
 
 li{
-a:link, a:visited(
+a:link, a:visited{
 
 
 
 display: inline-block
-){
+
 
 
 
@@ -28,7 +29,7 @@ display: inline-block
 
 }
 }
-
+}
 
 
 }

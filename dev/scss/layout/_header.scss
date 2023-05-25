@@ -2,33 +2,39 @@
     Header
 ============= */
 header{
-    #header-footer-grid{
         display: grid; 
         grid-template-columns: 50% auto;
         grid-template-areas:
-        "logo-nav burger"
-        "nav nav";        
+        "logo burger"
+        "nav nav"
+        "search search";        
         background-color: var(--green);
         color: var(--white);
-        padding: 16px;
+        padding-right: 16px;
+        position: fixed;
+        width: 100%;
 
 
         #logo{
         grid-area: logo;
         display: flex;
+        padding-left:16px;
         align-items: center;
+        border: 1px solid blue;
 
         }   
 
         #burger-container{
-            text-align: right;
+            justify-content: flex-end;
             grid-area: burger;
+            padding-right:16px;
             display: flex;
             align-items: center;
+            border: 1px solid red;
             button{
                 border:none;
                 background-color: transparent;
-                color:black;
+                color:white;
                 font-size: rem-calc(20);
 
             }
@@ -37,14 +43,16 @@ header{
         #nav{
             grid-area: nav;
         }
-
     
 
+
 #search{
-    display: grid; 
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     padding: 16px 0;
+    border: 1px solid orange;
+
 
     position: sticky;
     top: 100px;
@@ -54,7 +62,10 @@ header{
     }
     @include xxl{
         grid-template-columns: auto 1200px auto;
+        padding:24px 0;
     }
+
+    
     >div{
     grid-area: search;
         form{
@@ -65,8 +76,9 @@ header{
                 width:100%;
                 border-radius: 0;
                 margin-right:8px;
+                padding: 8px;
                 font-size: rem-calc(14);
-                color: var(--blueDark);
+                color: black;
 
                 @include md{
                     font-size: rem-calc(30);
@@ -91,10 +103,10 @@ header{
                     &:hover{
                         background-color: var(--darkorange);
                         color: var(--black);
-
+                    }
                 }
             }
         }
     }
-}
-}
+
+
